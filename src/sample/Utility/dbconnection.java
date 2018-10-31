@@ -6,10 +6,10 @@ import com.sun.rowset.CachedRowSetImpl;
 import java.sql.*;
 
 public class dbconnection  {
-    String hostName = "adaptiveexam.database.windows.net";
-    String dbName = "AdaptiveExam";
-    String user = "TeamLS";
-    String password = "SwinJava@9700.";
+    String hostName = "";
+    String dbName = "";
+    String user = "";
+    String password = "";
     String url = String.format("jdbc:sqlserver://%s:1433;database=%s;user=%s;password=%s;encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;", hostName, dbName, user, password);
     private static Connection conn = null;
 public void connectiondb() throws SQLException, ClassNotFoundException {
