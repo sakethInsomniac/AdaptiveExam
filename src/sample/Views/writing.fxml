@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="784.0" prefWidth="1256.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.WritingExamController">
+    <children>
+        <Pane layoutY="-63.0" prefHeight="149.0" prefWidth="1256.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+            <children>
+                <Label layoutX="73.0" layoutY="30.0" text="Swin AdaptiveExam" textFill="WHITE">
+                    <font>
+                        <Font size="48.0" />
+                    </font>
+                </Label>
+                <Label layoutX="79.0" layoutY="91.0" text="By Saketh &amp; Sourabh" textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+
+                </Label>
+            </children>
+        </Pane>
+        <Label id="lblWriteQuestion" fx:id="qLabel" alignment="CENTER" layoutX="260.0" layoutY="348.0" prefHeight="83.0" prefWidth="703.0" textAlignment="JUSTIFY" wrapText="true">
+            <font>
+                <Font name="Book Antiqua" size="18.0" />
+            </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+        </Label>
+        <Label fx:id="qType" layoutX="696.0" layoutY="316.0" text="Easy" textFill="#17d720">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="158.0" fitWidth="343.0" layoutX="501.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/writing.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="912.0" layoutY="207.0" prefHeight="42.0" prefWidth="81.0" text="Score:">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="scoreLbl" layoutX="1030.0" layoutY="198.0" prefHeight="59.0" prefWidth="88.0">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button id="btnWritingSubmit" fx:id="btnWritingSubmit" layoutX="593.0" layoutY="661.0" mnemonicParsing="false" onAction="#changeQuestion" prefHeight="26.0" prefWidth="69.0" text="Next" />
+        <Label accessibleRoleDescription="tt" layoutX="835.0" layoutY="165.0" prefHeight="42.0" prefWidth="167.0" text="Overall Score:">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label id="overallLbl" fx:id="overallLbl" layoutX="1030.0" layoutY="157.0" prefHeight="59.0" prefWidth="88.0">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="190.0" prefHeight="17.0" prefWidth="81.0" text="Maths Score:" textFill="#30d030">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="220.0" prefHeight="17.0" prefWidth="81.0" text="Image Score:" textFill="#e89820">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label id="mathslbl" fx:id="mathslbl" layoutX="140.0" layoutY="190.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label id="imgScoreLbl" fx:id="imgScoreLbl" layoutX="140.0" layoutY="220.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TextArea id="answerTbox" fx:id="answerTbox" layoutX="355.0" layoutY="441.0" prefHeight="200.0" prefWidth="511.0" promptText="Enter your answer here">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font></TextArea>
+        <Label layoutX="40.0" layoutY="257.0" prefHeight="17.0" prefWidth="81.0" text="Listening" textFill="#4810f2">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label id="ListeningLbl" fx:id="ListeningLbl" layoutX="140.0" layoutY="257.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="290.0" prefHeight="17.0" prefWidth="81.0" text="Spelling" textFill="#e10606">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label id="spellingLbl" fx:id="spellingLbl" layoutX="140.0" layoutY="290.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+      <Label id="lblTimer" fx:id="lblTimer" layoutX="355.0" layoutY="181.0" text="time">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

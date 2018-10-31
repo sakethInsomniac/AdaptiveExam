@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="AdaptiveExam@adaptiveexam.database.windows.net" uuid="05ef762f-e5f2-4310-a180-ed2e777a995b">
+      <database-info product="Microsoft SQL Server" version="12.00.700" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 7.0 for SQL Server" driver-version="7.0.0.0" family="AZURE" exact-version="12.0.700">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>TeamLS</user-name>
+    </data-source>
+  </component>
+</project>
